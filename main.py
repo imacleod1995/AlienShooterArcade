@@ -8,11 +8,13 @@ def run_game():
     pygame.display.set_caption("Alien Invasion")
 
     while True:
+        screen.fill(bg_color)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
 
-        screen.fill(bg_color)
+        pygame.display.flip()
+
 
 
 run_game()
